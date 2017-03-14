@@ -1,23 +1,21 @@
-const React = require('react');
-
+var React = require('react');
 
 var ErrorModal = React.createClass({
-  getDefaultProps: function(){
+  getDefaultProps: function () {
     return {
-      title:'Error'
+      title: 'Error'
     };
   },
-  propsTypes: {
-    title: React.PropTypes.string,
-    message: React.PropTypes.string.isRequired
+  propTypes: {
+      title: React.PropTypes.string,
+      message: React.PropTypes.string.isRequired
   },
-  componentDidMount: function(){
+  componentDidMount: function () {
     var modal = new Foundation.Reveal($('#error-modal'));
     modal.open();
   },
-  render: function(){
+  render: function () {
     var {title, message} = this.props;
-
 
     return (
       <div id="error-modal" className="reveal tiny text-center" data-reveal="">
@@ -32,6 +30,5 @@ var ErrorModal = React.createClass({
     );
   }
 });
-
 
 module.exports = ErrorModal;
