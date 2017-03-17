@@ -1,6 +1,5 @@
 var webpack = require('webpack');
 
-
 module.exports = {
   entry: [
     'script!jquery/dist/jquery.min.js',
@@ -30,7 +29,7 @@ module.exports = {
       WeatherMessage: 'app/components/WeatherMessage.jsx',
       About: 'app/components/About.jsx',
       Examples: 'app/components/Examples.jsx',
-      openweathermap: 'app/api/openWeatherMap.jsx',
+      openWeatherMap: 'app/api/openWeatherMap.jsx',
       ErrorModal: 'app/components/ErrorModal.jsx',
       applicationStyles: 'app/styles/app.scss'
     },
